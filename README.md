@@ -189,13 +189,13 @@ El modelo alcanzó un **AUC-ROC de 0.9854**, lo que indica una capacidad de disc
 
 Al aplicar el modelo sobre un conjunto más amplio de 849 casos en modo predicción por lote, la distribución de probabilidades muestra una clara separación entre los casos clasificados como "No IAAS" (concentrados cerca de probabilidad 0%) y los casos "IAAS" (concentrados cerca de probabilidad 100%), con muy pocos casos en la zona intermedia de incertidumbre. El modelo clasificó un 96.2% de los casos como "No IAAS" y un 3.8% como "IAAS", consistente con la baja prevalencia esperada de la condición.
 
-![Distribución de probabilidades y predicciones](images/distribucion_probabilidades.png)
+![Distribución de probabilidades y predicciones](Images/Distribucion_de_probabilidades.png)
 
 *Distribución de probabilidades predichas (izquierda) y proporción de predicciones IAAS / No IAAS (derecha) sobre 849 casos evaluados en modo batch.*
 
 El análisis de importancia de variables muestra que las tres características más relevantes para la predicción son, en conjunto, las que concentran prácticamente toda la capacidad predictiva del modelo: la **categoría IAAS principal** (importancia 0.338), el **número de categorías IAAS distintas** presentes en el caso (0.327) y el **número de criterios IAAS válidos** detectados (0.285). En contraste, variables administrativas como el año de ingreso, la procedencia, el destino, el tipo de dispositivo invasivo, el servicio clínico y la presencia de ARAISP tienen una importancia marginal (todas por debajo de 0.03).
 
-![Importancia de variables](images/importancia_variables.png)
+![Importancia de variables](Images/Importancia_de_variables.png)
 
 *Importancia de variables (Gini) del modelo Random Forest. Los criterios clínicos IAAS concentran más del 95% de la importancia total, mientras que las variables administrativas aportan muy poco al poder predictivo.*
 
