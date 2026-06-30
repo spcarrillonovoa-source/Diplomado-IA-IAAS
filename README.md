@@ -183,7 +183,7 @@ En Google Colab basta con ejecutar al inicio del notebook:
 
 El modelo alcanzó un **AUC-ROC de 0.9854**, lo que indica una capacidad de discriminación muy alta entre pacientes con y sin IAAS. Con el umbral óptimo de 0.63, se obtuvo una sensibilidad de 0.92 y una especificidad de 0.98, logrando detectar 12 de los 13 casos reales de IAAS en el set de prueba, con un único falso negativo.
 
-![Matriz de confusión y curva ROC](Images/matriz_conf)
+![Matriz de confusión y curva ROC](Images/matriz_conf.png)
 
 *Matriz de confusión (izquierda) y curva ROC (derecha) sobre el set de prueba. El modelo logra una sensibilidad de 0.92 y especificidad de 0.98 con el umbral óptimo de 0.63.*
 
